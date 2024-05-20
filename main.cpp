@@ -1,4 +1,3 @@
-#include <QCoreApplication>
 #include <Duck.h>
 #include <MallardDuck.h>
 #include <ModelDuck.h>
