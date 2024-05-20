@@ -1,6 +1,5 @@
 #ifndef DUCK_H
 #define DUCK_H
-#include <QObject>
 #include <iostream>
 #include <FlyBehavior.h>
 #include <QuackBehavior.h>
