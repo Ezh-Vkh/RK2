@@ -1,0 +1,22 @@
+name: CMake_Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  
+    
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3
+    
+    - name: Build
+      run: |
+        cmake -H. -B_build -DCMAKE_C_COMPILER=gcc
+        cmake --build _build
