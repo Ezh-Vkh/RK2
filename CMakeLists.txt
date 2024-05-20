@@ -10,11 +10,19 @@ if(BUILD_TESTS)
 endif()
 
 add_library(chain_of_responsibility STATIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/Duck.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/FlyBehavior.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/FlyNoWay.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/FlyRocketPowered.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/FlyWithWings.h
     ${CMAKE_CURRENT_SOURCE_DIR}/MallardDuck.h
     ${CMAKE_CURRENT_SOURCE_DIR}/ModelDuck.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/FlyRocketPowered.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/MuteQuack.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/NormalQuack.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/QuackBehavior.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/README.md
+    ${CMAKE_CURRENT_SOURCE_DIR}/Squeak.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/StrategyPattern.pro
+    ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
 )
 
 target_include_directories(chain_of_responsibility PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
