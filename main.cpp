@@ -14,5 +14,5 @@ int main(int argc, char* argv[])
     modelDuck->performFly();
     modelDuck->setFlyBehavior(new FlyRocketPowered());
     modelDuck->performFly();
-    return a.exec();
+    return 0;
 }
